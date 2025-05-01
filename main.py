@@ -390,6 +390,6 @@ if __name__ == "__main__":
     run_simulation(
         start_date=pd.to_datetime('2025-04-01'),
         days=10,
-        output_dir='D:\\LOG CREATER\\results',
+        output_dir=os.path.join(os.getcwd(),'results'),
         output_format='json'
     )
